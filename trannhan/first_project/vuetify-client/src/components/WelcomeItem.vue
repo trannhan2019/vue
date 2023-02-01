@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <PortfolioNavBar />
-  </div>
+  <div>HelloWorld</div>
 </template>
 
 <script setup>

@@ -10,6 +10,7 @@ export const useAuth = defineStore("auth", {
     setAuthenticated(data) {
       this.authenticated = data;
     },
+
     // async registerUser(data) {
     //   const { res, err } = await register(data);
     //   const userStore = useUser();
@@ -46,5 +47,9 @@ export const useAuth = defineStore("auth", {
     //     userStore.setUser(null);
     //   }
     // },
+  },
+  persist: {
+    key: "auth",
+    storage: sessionStorage,
   },
 });
